@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div style="text-align:center;">
+		<img src="https://res.cloudinary.com/dietzstj8/image/upload/v1636782068/logo_cllxhu.png" width="600px" height="250px">
+		<h2><span>Hola </span><span th:text="${nombreUsuario}"></span>.</h2>
+		<h3> Este email fué solicitado para recuperar su cuenta.</h3>
+		<h4>Dale click en el botón para acceder y cambiar tu contraseña.</h4>
+		<a th:href="@{${url}}">Cambiar Contraseña</a>
+		
+	</div>
+</body>
+</html>
